@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Banner</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            flex-shrink: 0;
+        }
+
+        /* Main content section */
+        .content {
+            max-width: 1400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-live-capture {
+            font-size: 1.5rem;
+            padding: 15px 25px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .btn-live-capture:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .main-container {
+            flex: 1;
+            background: url('https://source.unsplash.com/1920x1080/?technology,wireless') no-repeat center/cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white p-3">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h3>My Website</h3>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="Mainhome.html" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ProjectDetials.html" class="nav-link text-white">Project Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="algorithm.html" class="nav-link text-white">Algorithms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link text-white">Team</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="main-container">
+        <div class="content">
+            <h2>Live Capture</h2>
+            <p>Experience real-time data capture with our advanced tools. Click below to explore now!</p>
+
+            <a href="https://colab.research.google.com/drive/1c1i8HR2dnavnOhOtP10V6w_CppP-Hlm9#scrollTo=wJRT2PZ2km-Y&line=1&uniqifier=1" target="_blank" class="btn btn-primary btn-live-capture">
+                Live Capture
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2024 My Project. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
